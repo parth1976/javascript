@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+  <div id="clock">
+    <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+  </div>
+
+          
+
+  <!-- click on this button calls clockStart() -->
+  <input type="button" onclick="clockStart()" value="Start">
+
+  <!-- click on this button calls clockStop() -->
+  <input type="button" onclick="clockStop()" value="Stop">
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Name</th><th>Surname</th><th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td><td>Smith</td><td>10</td>
+      </tr>
+      <tr>
+        <td>Pete</td><td>Brown</td><td>15</td>
+      </tr>
+      <tr>
+        <td>Ann</td><td>Lee</td><td>5</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <button onclick="sorting()"> sorting</button>
+
+    <style>
+      .he{
+        width: 200px;
+        height: 200px;
+        top: 0;
+      }
+    </style>
+    <div class="he" style="background:blue" onmouseover="alert('never works')"></div>
+
+    
+  Deposit calculator.
+
+  <form name="calculator">
+    <table>
+      <tr>
+        <td>Initial deposit</td>
+        <td>
+          <input name="money" type="number" value="10000" required>
+        </td>
+      </tr>
+      <tr>
+        <td>How many months?</td>
+        <td>
+          <select name="months">
+            <option value="3">3 (minimum)</option>
+            <option value="6">6 (half-year)</option>
+            <option value="12" selected>12 (one year)</option>
+            <option value="18">18 (1.5 years)</option>
+            <option value="24">24 (2 years)</option>
+            <option value="30">30 (2.5 years)</option>
+            <option value="36">36 (3 years)</option>
+            <option value="60">60 (5   years)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Interest per year?</td>
+        <td>
+          <input name="interest" type="number" value="5" required>
+        </td>
+      </tr>
+    </table>
+
+
+  </form>
+
+
+  <table id="diagram">
+    <tr>
+      <th>Was:</th>
+      <th>Becomes:</th>
+    </tr>
+    <tr>
+      <th id="money-before"></th>
+      <th id="money-after"></th>
+    </tr>
+    <td>
+      <div style="background: red;width:40px;height:100px"></div>
+    </td>
+    <td>
+      <div style="background: green;width:40px;height:0" id="height-after"></div>
+    </td>
+  </table>
+
+  
+
+  <script src="/10/js/main.js">
+
+  </script>
+</body>
+</html>
